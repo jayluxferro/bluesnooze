@@ -36,7 +36,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		4F229ABA243CC29500B1784C /* Bluesnooze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluesnooze.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F229ABA243CC29500B1784C /* Bluesn00ze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bluesn00ze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F229ABD243CC29500B1784C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F229ABF243CC29600B1784C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F229AC2243CC29600B1784C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -69,7 +69,7 @@
 		4F229ABB243CC29500B1784C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4F229ABA243CC29500B1784C /* Bluesnooze.app */,
+				4F229ABA243CC29500B1784C /* Bluesn00ze.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -97,9 +97,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4F229AB9243CC29500B1784C /* Bluesnooze */ = {
+		4F229AB9243CC29500B1784C /* Bluesn00ze */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4F229AC8243CC29600B1784C /* Build configuration list for PBXNativeTarget "Bluesnooze" */;
+			buildConfigurationList = 4F229AC8243CC29600B1784C /* Build configuration list for PBXNativeTarget "Bluesn00ze" */;
 			buildPhases = (
 				4F229AB6243CC29500B1784C /* Sources */,
 				4F229AB7243CC29500B1784C /* Frameworks */,
@@ -111,12 +111,12 @@
 			);
 			dependencies = (
 			);
-			name = Bluesnooze;
+			name = Bluesn00ze;
 			packageProductDependencies = (
 				69CE295E292C0EBB007BF4CA /* LaunchAtLogin */,
 			);
 			productName = Bluesnooze;
-			productReference = 4F229ABA243CC29500B1784C /* Bluesnooze.app */;
+			productReference = 4F229ABA243CC29500B1784C /* Bluesn00ze.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -126,8 +126,8 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1110;
-				LastUpgradeCheck = 1240;
-				ORGANIZATIONNAME = "Oliver Peate";
+				LastUpgradeCheck = 1410;
+				ORGANIZATIONNAME = SPERIXLABS;
 				TargetAttributes = {
 					4F229AB9243CC29500B1784C = {
 						CreatedOnToolsVersion = 11.1;
@@ -135,7 +135,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 4F229AB5243CC29500B1784C /* Build configuration list for PBXProject "Bluesnooze" */;
+			buildConfigurationList = 4F229AB5243CC29500B1784C /* Build configuration list for PBXProject "Bluesn00ze" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -151,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4F229AB9243CC29500B1784C /* Bluesnooze */,
+				4F229AB9243CC29500B1784C /* Bluesn00ze */,
 			);
 		};
 /* End PBXProject section */
@@ -225,6 +225,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -286,6 +287,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -312,19 +314,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Bluesnooze/Bluesnooze.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3Y37VQ6H2R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Bluesnooze/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oliverpeate.Bluesnooze;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sperixlabs.Bluesnooze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bluesnooze/Bluesnooze-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -338,19 +344,23 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = Bluesnooze/Bluesnooze.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 3Y37VQ6H2R;
 				ENABLE_HARDENED_RUNTIME = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Bluesnooze/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
+				MARKETING_VERSION = 1.0;
 				OTHER_CFLAGS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = com.oliverpeate.Bluesnooze;
+				PRODUCT_BUNDLE_IDENTIFIER = org.sperixlabs.Bluesnooze;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Bluesnooze/Bluesnooze-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
@@ -360,7 +370,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4F229AB5243CC29500B1784C /* Build configuration list for PBXProject "Bluesnooze" */ = {
+		4F229AB5243CC29500B1784C /* Build configuration list for PBXProject "Bluesn00ze" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F229AC6243CC29600B1784C /* Debug */,
@@ -369,7 +379,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4F229AC8243CC29600B1784C /* Build configuration list for PBXNativeTarget "Bluesnooze" */ = {
+		4F229AC8243CC29600B1784C /* Build configuration list for PBXNativeTarget "Bluesn00ze" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4F229AC9243CC29600B1784C /* Debug */,
