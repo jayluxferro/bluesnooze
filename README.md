@@ -1,16 +1,10 @@
 ![Bluesnooze logo](images/icon.png)
 
 # Bluesnooze
+This is a fork of the **Bluesnooze** application.
 
-[Download the latest release][download-latest] or install via Homebrew:
+[Download the latest release][download-latest]
 
-```sh
-# Latest homebrew:
-brew install bluesnooze
-
-# Homebrew 2.5 or below
-brew cask install bluesnooze
-```
 
 ## About
 
@@ -36,8 +30,8 @@ You might also want to check-out Whisper –  [the volume limiter for MacOS](htt
 - Please note this app is not compatible with the “Allow your Apple Watch to unlock your Mac” feature.
 - Unfortunately this app can't be distributed via the App Store because it uses a private API to switch Bluetooth on/off (but the release version is notarized by Apple).
 
-[download-latest]: https://github.com/odlp/bluesnooze/releases/latest
+[download-latest]: https://github.com/jayluxferro/bluesnooze/releases/latest
 
-## Enjoying Bluesnooze?
-
-Perhaps you could [buy me a coffee](https://www.buymeacoffee.com/odlp) to say thanks :coffee:
+## Acknowledgements
+- https://github.com/odlp/bluesnooze
+- https://github.com/stefansundin/bluesnooze
